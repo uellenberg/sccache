@@ -723,6 +723,7 @@ mod test {
         {
             let cache = storage_from_config(&config, runtime.handle()).unwrap();
 
+            // Test change.
             runtime.block_on(async move {
                 assert_eq!(
                     cache
